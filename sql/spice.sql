@@ -10,8 +10,6 @@ SET time_zone = "+00:00";
 -- Database: `spice`
 --
 
-CREATE DATABASE IF NOT EXISTS `spice`;
-
 -- --------------------------------------------------------
 
 --
