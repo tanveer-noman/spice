@@ -1,7 +1,8 @@
 WELCOME TO SPICE
 =================================
 
-This is a very small PHP framework using MVC design pattern. 
+This is a very small PHP framework using MVC design pattern. For better understanding I have created an address book using spice framwork.
+Now I am going to demonstrate how this small and tiny framework can meet your requirement.
 
 
 CONFIGURATION
