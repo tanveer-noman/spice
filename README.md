@@ -41,7 +41,7 @@ SPICE is fully tracked by the MVC design pattern. Here is details how the patter
 
 ## Folder Structure
 
-SPICE is very simple in nature. All application related files need to store in the `app` folder and all the system related files are set in `system`. Inside the application folder there are folders for all of the specific application entities.
+SPICE is very simple in nature. All application related files need to store in the **app** folder and all the system related files are set in **system**. Inside the application folder there are folders for all of the specific application entities.
 
 <ul>
 	<li>app
@@ -62,9 +62,13 @@ SPICE is very simple in nature. All application related files need to store in t
 	<li>system</li>
 </ul>
 
-To make it simple SPICE is free to make your own structure but it's important to use `BASE_URL` gobal variable to include files in the HTML. Like:
+To make it simple SPICE is free to make your own structure but it's important to use BASE_URL gobal variable to include files in the HTML. Like:
 
-`<link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style.css" type="text/css" media="screen" />`
+```php
+// example of adding CSS file
+
+<link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style.css" type="text/css" media="screen" />
+```
 
 ## URL Structure
 
