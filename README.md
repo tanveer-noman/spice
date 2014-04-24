@@ -163,6 +163,8 @@ $this->redirect('className/functionName');
 View is a web page or page that represent the data to the end user. It can hold HTML and PHP code 
 
 ```php
+//example of a header.php file
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -173,3 +175,46 @@ View is a web page or page that represent the data to the end user. It can hold 
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style.css" type="text/css" media="screen" />
 </head>
 ```
+
+In addition you can load _$variable_ from controller and fetch it
+
+```php
+//example of a view.php file
+
+<div id="content">
+    <p>List of my personal address</p>
+    <?php if(!empty($addresses)):?>
+    <div>
+        <table class="address">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>		
+                <th>Street</th>
+                <th>Zip</th>
+                <th>City</th>
+                <th>Options</th>
+            </tr>
+            <?php foreach($addresses as $address){?>
+            <tr>
+                <td><?php echo $address->first_name;?></td>
+                <td><?php echo $address->last_name;?></td>
+                <td><?php echo $address->street;?></td>
+                <td><?php echo $address->zip;?></td>
+                <td><?php echo $address->city;?></td>
+                <td>
+                    <a href="<?php echo BASE_URL.'address/edit/'.$address->id;?>">Edit</a>
+                    &nbsp;
+                    <a href="<?php echo BASE_URL.'address/delete/'.$address->id;?>">Delete</a>
+                </td>
+            </tr>
+            <?php }?>
+        </table>
+    </div>
+    <?php endif;?>
+</div>
+```
+
+## Contributors
+
+* [Tanveer Noman](https://github.com/tanveer-noman/ "Tanveer Noman") is inspired from PIP framework
+
