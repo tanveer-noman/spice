@@ -68,10 +68,31 @@ SPICE is very simple in nature. All application related files need to store in t
 	<li>system</li>
 </ul>
 
-We encourage you to use the "static" folder in the root to store you static resource files (CSS, JS etc) however you can put them anywhere. You can also use the BASE_URL variable to help include files in your HTML. For example:
-
 To make it simple SPICE is free to make your own structure but it's important to use `BASE_URL` gobal variable to include files in the HTML. Like:
 
 `<link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style.css" type="text/css" media="screen" />`
+
+URL Structure
+=============
+
+SPICE is very handy to create SEO friendly URLs and it's designed to force you to use that. So SPICE uses a segment-based approach:
+
+`doamin.com/className/functionName/parameters`
+
+Naming Conventions
+==================
+
+SPICE is designed to encourage <strong>Upper Camel Case</strong> for example: 
+
+`ThisIsAnExample`
+
+Models
+======
+
+[sourcecode language="PHP"]
+$this->language->get('text_product');
+[sourcecode]
+
+
 
 
