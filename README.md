@@ -91,7 +91,7 @@ Models
 
 In model this very simple to load data and return it to controller
 
-<?php
+```php
 // exmaple of a model class
 
 class Address_model extends Model {
@@ -104,11 +104,11 @@ class Address_model extends Model {
         }
     }
 }
-?>
+
 
 Now in controller you need to use like this: 
 
-<?php 
+```php
 //example of a controller class
 
 class Address extends Controller {
@@ -122,7 +122,7 @@ class Address extends Controller {
     }
 
 }
-?>
+
 
 
 
