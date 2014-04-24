@@ -16,7 +16,7 @@ Click ot [download](https://github.com/tanveer-noman/spice/archive/master.zip "D
 
 ## Installation
 
-To process user need to follow these steps: 
+A demo project 'addressbook' is written using this SPICE framework to see it in a practically.
 
 1. Download the zip file.
 2. Extract it to your web root directory.
