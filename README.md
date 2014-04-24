@@ -218,3 +218,10 @@ In addition you can load _$variable_ from controller and fetch it
 
 * [Tanveer Noman](https://github.com/tanveer-noman/ "Tanveer Noman") is inspired from PIP framework
 
+## Upcoming 
+
+* SPICE installer to install the freamework
+
+## Changelog
+
+**v1.0** - Initial version
