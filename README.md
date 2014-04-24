@@ -12,7 +12,7 @@ SPICE is a very small PHP framework build for people who can usually want to use
 
 Click ot [download](https://github.com/tanveer-noman/spice/archive/master.zip "Download SPICE") the latest version of SPICE. You can also FORK or close the GIT repository by running
 
->$ git clone https://github.com/tanveer-noman/spice.git
+> $ git clone https://github.com/tanveer-noman/spice.git
 
 ## Installation
 
@@ -64,19 +64,19 @@ SPICE is very simple in nature. All application related files need to store in t
 
 To make it simple SPICE is free to make your own structure but it's important to use `BASE_URL` gobal variable to include files in the HTML. Like:
 
-`<link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style.css" type="text/css" media="screen" />`
+> <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style.css" type="text/css" media="screen" />
 
 ## URL Structure
 
 SPICE is very handy to create SEO friendly URLs and it's designed to force you to use that. So SPICE uses a segment-based approach:
 
-`doamin.com/className/functionName/parameters`
+> doamin.com/className/functionName/parameters
 
 ## Naming Conventions
 
 SPICE is designed to encourage **Upper Camel Case** for example: 
 
-`ThisIsAnExample`
+> ThisIsAnExample
 
 ## Models
 
@@ -147,7 +147,7 @@ To redired SPICE also allowe
 
 ```php
 //example to redirect
-$this->redirect('className');
+$this->redirect('className'); // auto load index function
 
 //Or,
 
