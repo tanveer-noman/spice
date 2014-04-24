@@ -15,5 +15,5 @@ Download
 
 Click to download the latest version of SPICE. You can also FORK or close the GIT repository by running
 
-$ git clone https://github.com/tanveer-noman/spice.git
+<blockquote>$ git clone https://github.com/tanveer-noman/spice.git</blockquote>
 
