@@ -15,7 +15,7 @@ Download
 
 Click to <a href="https://github.com/tanveer-noman/spice/archive/master.zip" title="Download SPICE">download</a> the latest version of SPICE. You can also FORK or close the GIT repository by running
 
-<blockquote>$ git clone https://github.com/tanveer-noman/spice.git</blockquote>
+`$ git clone https://github.com/tanveer-noman/spice.git`
 
 Installation
 ============
@@ -67,3 +67,11 @@ SPICE is very simple in nature. All application related files need to store in t
 	</li>
 	<li>system</li>
 </ul>
+
+We encourage you to use the "static" folder in the root to store you static resource files (CSS, JS etc) however you can put them anywhere. You can also use the BASE_URL variable to help include files in your HTML. For example:
+
+To make it simple SPICE is free to make your own structure but it's important to use `BASE_URL` gobal variable to include files in the HTML. Like:
+
+`<link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/style.css" type="text/css" media="screen" />`
+
+
