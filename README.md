@@ -89,10 +89,40 @@ SPICE is designed to encourage <strong>Upper Camel Case</strong> for example:
 Models
 ======
 
-[sourcecode language="PHP"]
-$this->language->get('text_product');
-[sourcecode]
+In model this very simple to load data and return it to controller
 
+<?php
+// exmaple of a model class
+
+class Address_model extends Model {
+
+	//Get all address
+	public function getAllAddress($id = null){
+        if($id != null){
+            $result = $this->query('SELECT * FROM `addresses` WHERE id ='.$this->escapeString($id));
+            return $result;
+        }
+    }
+}
+?>
+
+Now in controller you need to use like this: 
+
+<?php 
+//example of a controller class
+
+class Address extends Controller {
+
+	function index() {
+        $template = $this->loadView('view_address');
+        $cities = $this->loadModel('Address_model');
+        $data = $cities->getAllAddress();
+        $template->set('addresses', $data);
+        $template->render();
+    }
+
+}
+?>
 
 
 
