@@ -13,7 +13,57 @@ Requirements
 Download
 ========
 
-Click to download the latest version of SPICE. You can also FORK or close the GIT repository by running
+Click to <a href="https://github.com/tanveer-noman/spice/archive/master.zip" title="Download SPICE">download</a> the latest version of SPICE. You can also FORK or close the GIT repository by running
 
 <blockquote>$ git clone https://github.com/tanveer-noman/spice.git</blockquote>
 
+Installation
+============
+
+To process user need to follow these steps: 
+
+1. Download the zip file.
+2. Extract it to your web root directory.
+3. Now, go to phpmyadmin and create a database named `spice`; 
+4. Now import the `sql/spice.sql` file to the database.
+5. Go to system/config file. You need to set base url like `http://localhost/spice/` or what you might feet.
+6. Now set the database host. Usually it's `localhost`, database name is `spice` or the name you have created, the user is the database user name and set the password. 
+
+Your done!
+
+Go to browser and visit http://localhost/spice/ or whatever you set the name.
+
+Documentation
+=============
+
+SPICE is fully tracked by the MVC design pattern. Here is details how the pattern can work
+
+<strong>Model</strong> represents the data structures and usually the business logic that retrieve, insert, and update the data in the database. 
+
+<strong>View</strong> is the presentation layer. User can see that is being represented to them. We can call it as a page or web page.
+
+<strong>Controller</strong> is the control section that can communicate with your business logic that is written in the model and sent the data to the presentation layer that user can view as a page. 
+
+Folder Structure
+================
+
+SPICE is very simple in nature. All application related files need to store in the `app` folder and all the system related files are set in `system`. Inside the application folder there are folders for all of the specific application entities.
+
+<ul>
+	<li>app
+		<ul>
+			<li>controllers</li>
+			<li>helpers</li>
+			<li>models</li>
+			<li>views</li>
+		</ul>
+	</li>
+	<li>public
+		<ul>
+			<li>css</li>
+			<li>images</li>
+			<li>js</li>
+		</ul>
+	</li>
+	<li>system</li>
+</ul>
